@@ -422,6 +422,18 @@ void Master() {
 	cout << "RESOLUTION: 2048x2048" << std::endl;
 	w.RunTest();
 
+	ww = 4096;
+	wh = ww;
+	w.changeRes(wh, ww);
+	cout << "RESOLUTION: 4096x4096" << std::endl;
+	w.RunTest();
+
+	ww = 8192;
+	wh = ww;
+	w.changeRes(wh, ww);
+	cout << "RESOLUTION: 8192x8192" << std::endl;
+	w.RunTest();
+
 	w.close();
 
 }
